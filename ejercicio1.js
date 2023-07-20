@@ -7,12 +7,6 @@ let redes = ["Github", "https://github.com/"]
 const afirmativo = "Sí";
 const negativo = "No";
 
-let respuesta = prompt("¿Estás buscando trabajo?");
-
-while(respuesta != afirmativo && respuesta != negativo) {
-    respuesta = prompt("¿Estás buscando trabajo? Sí / No");
-}
-
 if(respuesta == afirmativo) {
     alert("Este usuario está buscando trabajo");
 } else if(respuesta == negativo) {
