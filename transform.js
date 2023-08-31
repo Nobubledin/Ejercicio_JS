@@ -36,3 +36,12 @@ function obtenerdatos(datos) {
 const resultado = obtenerdatos(datos);
 
 console.log(resultado)
+
+
+function obtenerproyectos(datos) {
+    const arrayproyectos = datos.flatMap(item => item.proyectos.map(proyecto => proyecto.nombre));
+    return arrayproyectos;
+}
+
+const resultadoproyectos = obtenerproyectos(datos);
+console.log(resultadoproyectos);
